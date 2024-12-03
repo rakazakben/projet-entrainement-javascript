@@ -1,5 +1,5 @@
-//lancerJeu();
-let inputEcriture = document.getElementById("inputEcriture");
+lancerJeu();
+/*let inputEcriture = document.getElementById("inputEcriture");
 console.log(inputEcriture);
 let btnValiderMot = document.getElementById("btnValiderMot");
 console.log(btnValiderMot);
@@ -10,4 +10,4 @@ let zoneScore = document.querySelector(".zoneScore span");
 console.log(zoneScore);
 
 let selecteurRadio = document.querySelectorAll(".optionSource input");
-console.log(selecteurRadio);
+console.log(selecteurRadio);*/

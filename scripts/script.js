@@ -1,5 +1,6 @@
 function afficherResultat(score, nbMots){
-    console.log("votre score est de " +score ,"sur "+nbMots);
+    let scoreboard = document.querySelector(".zoneScore span");
+    scoreboard.textContent = `${score}/${nbMots}`;
 }
 function selecteur(){
     let choix = prompt("choisissez phrases ou mots");
