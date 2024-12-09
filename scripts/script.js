@@ -8,7 +8,7 @@ function afficherPropositions(mot){
 }
 
 function lancerJeu(){
-    //let choix = selecteur();
+    clickPartager();
     let score =0;
     let bouton = document.getElementById("btnValiderMot");
     let reponse = document.getElementById("inputEcriture");
