@@ -6,7 +6,10 @@ function afficherPropositions(mot){
     let zoneProposition = document.querySelector(".zoneProposition");
     zoneProposition.innerText = mot;
 }
-
+function afficherEmail(nom, email, score) {
+    let mailto = `mailto:${email}?subject=Partage du score Azertype&body=Salut, je suis ${nom} et je viens de réaliser le score ${score} sur le site d'Azertype !`
+    location.href = mailto
+}
 function lancerJeu(){
     clickPartager();
     let score =0;
@@ -52,6 +55,21 @@ function lancerJeu(){
             afficherPropositions(listeProposition[i]);
         });
     }
+    let form = document.querySelector("form");
+
+    form.addEventListener("submit" , (event) => {
+
+        event.preventDefault();
+        let baliseNom = document.getElementById("nom");
+        let nom = baliseNom.value;
+        let baliseMail = document.getElementById("email");
+        let mail = baliseMail.value;
+        let scoreMail = `${score} / ${i}`;
+
+        console.log(nom);
+        console.log(mail);
+        afficherEmail(nom, mail, scoreMail);
+    }  )
 
 
 }
